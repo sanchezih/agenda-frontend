@@ -6,11 +6,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { RegistrarEmpleadoComponent } from './registrar-empleado/registrar-empleado.component';
 
 const routes: Routes = [
-  {path : 'empleados',component:ListaEmpleadosComponent},
-  {path:'',redirectTo:'empleados',pathMatch:'full'},
-  {path : 'registrar-empleado',component : RegistrarEmpleadoComponent},
-  {path : 'actualizar-empleado/:id',component : ActualizarEmpleadoComponent},
-  {path : 'empleado-detalles/:id',component : EmpleadoDetallesComponent}
+  { path: 'empleados', component: ListaEmpleadosComponent },
+  { path: '', redirectTo: 'empleados', pathMatch: 'full' },
+  { path: 'registrar-empleado', component: RegistrarEmpleadoComponent },
+  { path: 'actualizar-empleado/:id', component: ActualizarEmpleadoComponent },
+  { path: 'empleado-detalles/:id', component: EmpleadoDetallesComponent }
 ];
 
 @NgModule({

@@ -1,4 +1,4 @@
-import  swal  from 'sweetalert2';
+import swal from 'sweetalert2';
 import { EmpleadoService } from './../empleado.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
@@ -11,9 +11,9 @@ import { Empleado } from '../empleado';
 })
 export class EmpleadoDetallesComponent implements OnInit {
 
-  id:number;
-  empleado:Empleado;
-  constructor(private route:ActivatedRoute,private empleadoServicio:EmpleadoService) { }
+  id: number;
+  empleado: Empleado;
+  constructor(private route: ActivatedRoute, private empleadoServicio: EmpleadoService) { }
 
   ngOnInit(): void {
     this.id = this.route.snapshot.params['id'];

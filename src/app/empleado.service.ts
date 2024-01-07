@@ -9,7 +9,7 @@ import { Empleado } from './empleado';
 export class EmpleadoService {
 
   //Esta URL obtiene el listado de todos los empleados en el backend
-  private baseURL = "http://192.168.2.14:8080/api/v1/personas";
+  private baseURL = "http://192.168.2.100:8080/v1/contactos";
 
   constructor(private httpClient: HttpClient) { }
 
